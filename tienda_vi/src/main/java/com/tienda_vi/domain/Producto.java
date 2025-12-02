@@ -47,5 +47,9 @@ public class Producto implements Serializable {
     
      @Column(name="activo")
     private boolean activo;
+     
+     @ManyToOne
+     @JoinColumn(name="id_categoria")
+     private Categoria categoria;
 
 }
